@@ -1,0 +1,36 @@
+programa
+{
+	/*Um dado é lançado 10 vezes e o valor correspondente é anotado. 
+		Faça um programa que gere um vetor com os lançamentos, escreva esse vetor.
+		A seguir determine e imprima a média aritimética dos lançamentos, contabilize 
+		e apresente também quantas foram as ocorrências da maior ponntuação.*/
+		
+	
+	funcao inicio()
+	{
+
+        inteiro dado[10],x,soma=0,maiorPont=0
+        real media=0.04
+
+        escreva("\nEntre com a pontuação do dado: ")
+
+	  para(x=0;x<10;x++)
+	  {
+	  	escreva("\n" ,x+1, "° lançamento: ")
+	  	leia(dado[x])
+
+	  	soma+=dado[x]
+	  	media=soma/10.0
+	  }
+        para(x=0;x<10;x++)
+        se(dado[x]==6)
+	  {
+	  	maiorPont++
+	  	
+	  }
+	  escreva("\nMédia Aritmética dos lançamentos: ",media)
+	  escreva("\nQuantidade de vezes da maior pontuação: ",maiorPont)
+	  
+	}	
+	
+}
